@@ -18,7 +18,7 @@ proc request {channel server} {
 		}
 	}
 
-    set string_request "GET / HTTP/1.1\nhost: $server\nConnection: close\n\n"
+	set string_request "GET / HTTP/1.1\nhost: $server\nConnection: close\n\n"
 	puts $channel $string_request
 	flush $channel
 	reading_socket $channel
